@@ -54,6 +54,7 @@
     "nuxi",
     "Nuxt",
     "nuxtjs",
-    "Sportly"
+    "Sportly",
+    "Vitest"
   ]
 }

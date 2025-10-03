@@ -13,7 +13,7 @@ const baseSkeletonStyle = 'bg-base-200 rounded-xl';
 
 <template>
   <NuxtLink
-    class="league-item flex justify-between h-full"
+    class="league-list-item flex justify-between h-full"
     :class="loading && 'skeleton w-full cursor-default'"
     :to
   >
