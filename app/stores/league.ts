@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 
-import type { AllLeagueFilters, AllLeagueItem } from '~/lib/types';
+import type { AllLeagueFilters, AllLeagueItem, DropdownItem } from '~/lib/types';
 
 export const useLeagueStore = defineStore('leagueStore', () => {
   const {
@@ -12,10 +12,29 @@ export const useLeagueStore = defineStore('leagueStore', () => {
   });
 
   const isLoading = computed(() => status.value === 'pending');
+
   const filters = reactive<AllLeagueFilters>({
     sport: null,
     leagueName: null,
   });
+
+  const availableSports = computed<DropdownItem[]>(() => {
+    /**
+     * TODO: Future implementation is to fetch All Sports via api endpoint
+     * https://www.thesportsdb.com/api/v1/json/123/all_sports.php
+     */
+    const data = Array.isArray(allData.value) ? allData.value : [];
+    const available = data.reduce((set, item) => {
+      set.add(item.strSport);
+      return set;
+    }, new Set<string>());
+    return [...available].map(sport => ({
+      icon: sport.toLowerCase().split(' ').join('-'),
+      label: sport,
+      value: sport,
+    }));
+  });
+
   const list = computed(() => {
     const data = Array.isArray(allData.value) ? allData.value : [];
     if (!filters.leagueName && !filters.sport) {
@@ -31,6 +50,7 @@ export const useLeagueStore = defineStore('leagueStore', () => {
 
   return {
     allData,
+    availableSports,
     filters,
     isLoading,
     list,

@@ -21,6 +21,7 @@ onUnmounted(() => {
 
 <template>
   <fieldset class="flex justify-end items-center gap-2">
+    <LeagueFilters />
     <label class="input">
       <!-- TODO: Use Icon Transitions -->
       <Icon
