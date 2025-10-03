@@ -1,3 +1,5 @@
+import type { RouteLocationRaw } from 'vue-router';
+
 export type NullString = string | null;
 
 export type AllLeagueFilters = {
@@ -75,4 +77,24 @@ export type LookupLeagueBadge = {
 
 export type LookupLeagueSeasons = {
   seasons: LookupLeagueBadge[] | null;
+};
+
+export type DropdownItem = {
+  icon: string;
+  label: string;
+  value: NullString;
+  to?: RouteLocationRaw;
+  classes?: string;
+  size?: string;
+  onClick?: () => any;
+};
+
+export type Icons = {
+  'chevron-up': string;
+  'chevron-down': string;
+  'basketball': string;
+  'soccer': string;
+  'motorsport': string;
+  'ice-hockey': string;
+  'american-football': string;
 };
