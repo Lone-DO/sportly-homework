@@ -8,6 +8,7 @@ onMounted(() => {
 
 <template>
   <section id="league" class="flex gap-4 justify-center flex-col w-full max-w-200">
+    <LeagueSearch />
     <LeagueList :list="leagueStore.list" :loading="leagueStore.isLoading" />
   </section>
 </template>

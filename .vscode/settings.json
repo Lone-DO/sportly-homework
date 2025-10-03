@@ -50,6 +50,7 @@
   // tailwind plugin targeting
   "tailwindCSS.experimental.configFile": "./app/assets/css/main.css",
   "cSpell.words": [
+    "majesticons",
     "nuxi",
     "Nuxt",
     "nuxtjs",
