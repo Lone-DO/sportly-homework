@@ -12,6 +12,10 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
+  colorMode: {
+    /** Modify `data-theme` attribute on root html element */
+    dataValue: 'theme',
+  },
   compatibilityDate: '2025-07-15',
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
@@ -23,6 +27,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/icon',
+    '@nuxtjs/color-mode',
     '@pinia/nuxt',
   ],
   vite: {

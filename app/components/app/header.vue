@@ -10,5 +10,8 @@
       </NuxtLink>
       <span>Losovoj</span>
     </div>
+    <div class="navbar-end flex justify-end">
+      <AppThemeToggle />
+    </div>
   </header>
 </template>
