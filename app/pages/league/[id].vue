@@ -44,6 +44,10 @@ onMounted(refresh);
 
 <template>
   <article id="league-id" class="max-w-200 flex flex-col flex-1 gap-2 w-full">
+    <nuxt-link to="/" class="flex items-center">
+      <Icon name="majesticons:arrow-left" />
+      <span>Back to list</span>
+    </nuxt-link>
     <app-lazy-image
       alt="Banner"
       class="w-full min-h-20"
