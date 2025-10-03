@@ -20,7 +20,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <fieldset class="flex justify-end items-center gap-2">
+  <fieldset class="league-search flex justify-end items-center gap-2">
     <LeagueFilters />
     <label class="input">
       <!-- TODO: Use Icon Transitions -->
