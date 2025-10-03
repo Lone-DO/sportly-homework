@@ -1,5 +1,8 @@
 <template>
-  <div class="text-red-500">
-    Sportly Homework config init
+  <div id="app" class="min-h-screen flex flex-col w-full">
+    <AppHeader />
+    <main class="w-full p-2 flex-1 flex flex-col items-center">
+      <NuxtPage />
+    </main>
   </div>
 </template>

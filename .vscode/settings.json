@@ -51,6 +51,7 @@
   "tailwindCSS.experimental.configFile": "./app/assets/css/main.css",
   "cSpell.words": [
     "nuxi",
+    "Nuxt",
     "nuxtjs",
     "Sportly"
   ]
