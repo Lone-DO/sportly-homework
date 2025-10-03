@@ -32,7 +32,6 @@
     "@pinia/nuxt": "0.11.2",
     "@pinia/testing": "^1.0.2",
     "@tailwindcss/vite": "^4.1.12",
-    "@vue/test-utils": "^2.4.6",
     "daisyui": "^5.0.54",
     "eslint": "^9.36.0",
     "eslint-plugin-format": "^1.0.1",
