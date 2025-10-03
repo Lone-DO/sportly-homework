@@ -1,5 +1,10 @@
 export type NullString = string | null;
 
+export type AllLeagueFilters = {
+  sport: NullString;
+  leagueName: NullString;
+};
+
 export type AllLeague = {
   leagues: AllLeagueItem[] | null;
 };
